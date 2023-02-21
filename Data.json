@@ -1,0 +1,204 @@
+{
+	"info": {
+		"_postman_id": "b8c156a6-4b99-4baf-a92b-f50abfc5d2c4",
+		"name": "Frontend Developer Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/search?query=\"Berlin\"",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "\"Berlin\""
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Search",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/search?query=\"Berlin\"",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"search"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "\"Berlin\""
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"took-ms\": 352,\n    \"amount\": 6,\n    \"media\": [\n        {\n            \"media-id\": 115446019,\n            \"preview\": \"/bild/st/0115446019/w.jpg\",\n            \"height\": 5180,\n            \"width\": 7695\n        },\n        {\n            \"media-id\": 138384880,\n            \"preview\": \"/bild/st/0138384880/w.jpg\",\n            \"height\": 5568,\n            \"width\": 3712\n        },\n        {\n            \"media-id\": 137849760,\n            \"preview\": \"/bild/st/0137849760/w.jpg\",\n            \"height\": 3537,\n            \"width\": 5315\n        },\n        {\n            \"media-id\": 150105569,\n            \"preview\": \"/bild/st/0150105569/w.jpg\",\n            \"height\": 2667,\n            \"width\": 4000\n        },\n        {\n            \"media-id\": 135909679,\n            \"preview\": \"/bild/st/0135909679/w.jpg\",\n            \"height\": 3648,\n            \"width\": 5472\n        }, \n        {\n            \"media-id\": 115278567,\n            \"preview\": \"/bild/st/0115278567/w.jpg\",\n            \"height\": 7360,\n            \"width\": 4912\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Media",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/media/{id}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"media",
+						"{id}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "media 115446019",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/media/115446019",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"media",
+								"115446019"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"caption\": \"IMAGO Creative: Stadtlandschaften - Straßen von Berlin Low angle view of World Clock in Alexanderplatz square, Berlin City Copyright: PabloxCamacho B18116043\",\n    \"categories\": [],\n    \"cliplength\": 0,\n    \"creationdate\": \"2021-03-15 00:00:00.000\",\n    \"creator\": \"PhotoAlto\",\n    \"height\": 5180,\n    \"keywords\": \"\",\n    \"licencelanguagepointer\": \"licencegroup2\",\n    \"licensetype\": \"RFS\",\n    \"masterimage\": null,\n    \"mediaid\": 115446019,\n    \"mediaidpadded\": \"0115446019\",\n    \"mediaprev\": null,\n    \"mediasrc\": \"https://www.imago-images.com/bild/st/0115446019/m.jpg\",\n    \"mediathumb\": \"https://www.imago-images.com/bild/st/0115446019/s.jpg\",\n    \"mediatype\": \"image\",\n    \"similarmedia\": null,\n    \"source\": \"st\",\n    \"territoryrestrictions\": \"\",\n    \"title\": \"IMAGO Creative: Stadtlandschaften - Straßen von Berlin Low angle view of World Clock in Alexanderpl\",\n    \"usagelicences\": [\n        {\n            \"credits\": 1,\n            \"currency\": \"EURO\",\n            \"languagePointer\": \"licence3\",\n            \"name\": \"Web\",\n            \"price\": 900,\n            \"licenseid\": 3\n        },\n        {\n            \"credits\": 20,\n            \"currency\": \"EURO\",\n            \"languagePointer\": \"licence4\",\n            \"name\": \"Full RF\",\n            \"price\": 9900,\n            \"licenseid\": 4\n        }\n    ],\n    \"width\": 7695,\n    \"mediaReference\": {\n        \"id\": 115446019,\n        \"source\": \"st\",\n        \"type\": \"image\"\n    },\n    \"searchindexing\": true\n}"
+				},
+				{
+					"name": "media 138384880",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urll}}/media/138384880",
+							"host": [
+								"{{urll}}"
+							],
+							"path": [
+								"media",
+								"138384880"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"caption\": \"griechischer Hof, um 1850, Neues Museum, Museumsinsel, Berlin, Deutschland mcpins *** Greek court, around 1850, Neues Museum, Museum Island, Berlin, Germany mcpins mcpins\",\n    \"categories\": [],\n    \"cliplength\": 0,\n    \"creationdate\": \"2021-10-12 00:00:00.000\",\n    \"creator\": \"McPHOTO\",\n    \"height\": 5568,\n    \"keywords\": \"\",\n    \"licencelanguagepointer\": \"licencegroup1\",\n    \"licensetype\": \"RM\",\n    \"masterimage\": null,\n    \"mediaid\": 138384880,\n    \"mediaidpadded\": \"0138384880\",\n    \"mediaprev\": null,\n    \"mediasrc\": \"https://www.imago-images.com/bild/st/0138384880/m.jpg\",\n    \"mediathumb\": \"https://www.imago-images.com/bild/st/0138384880/s.jpg\",\n    \"mediatype\": \"image\",\n    \"similarmedia\": null,\n    \"source\": \"st\",\n    \"territoryrestrictions\": \"\",\n    \"title\": \"griechischer Hof, um 1850, Neues Museum, Museumsinsel, Berlin, Deutschland mcpins *** Greek court, a\",\n    \"usagelicences\": [\n        {\n            \"credits\": 2,\n            \"currency\": \"EURO\",\n            \"languagePointer\": \"licence1\",\n            \"name\": \"Web\",\n            \"price\": 1900,\n            \"licenseid\": 1\n        },\n        {\n            \"credits\": 20,\n            \"currency\": \"EURO\",\n            \"languagePointer\": \"licence2\",\n            \"name\": \"All Media\",\n            \"price\": 9900,\n            \"licenseid\": 2\n        }\n    ],\n    \"width\": 3712,\n    \"mediaReference\": {\n        \"id\": 138384880,\n        \"source\": \"st\",\n        \"type\": \"image\"\n    },\n    \"searchindexing\": true\n}"
+				},
+				{
+					"name": "media 137849760",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urll}}/media/137849760",
+							"host": [
+								"{{urll}}"
+							],
+							"path": [
+								"media",
+								"137849760"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"caption\": \"Brandenburger Tor bei Nacht, Deutschland, Berlin Brandenburg Gate at night, Germany, Berlin BLWS653779 *** Brandenburg Gate at night, Germany, Berlin Brandenburg Gate at night, Germany, Berlin BLWS653779 Copyright: xblickwinkel McPHOTO B.xLeitnerx\",\n    \"categories\": [\n        {\n            \"link\": \"https://www.imago-images.com/category/creative/landmarks-and-buildings/landmarks\",\n            \"name\": \"Landmarks\"\n        }\n    ],\n    \"cliplength\": 0,\n    \"creationdate\": \"2021-10-08 00:00:00.000\",\n    \"creator\": \"blickwinkel\",\n    \"height\": 3537,\n    \"keywords\": \"\",\n    \"licencelanguagepointer\": \"licencegroup1\",\n    \"licensetype\": \"RM\",\n    \"masterimage\": null,\n    \"mediaid\": 137849760,\n    \"mediaidpadded\": \"0137849760\",\n    \"mediaprev\": null,\n    \"mediasrc\": \"https://www.imago-images.com/bild/st/0137849760/m.jpg\",\n    \"mediathumb\": \"https://www.imago-images.com/bild/st/0137849760/s.jpg\",\n    \"mediatype\": \"image\",\n    \"similarmedia\": null,\n    \"source\": \"st\",\n    \"territoryrestrictions\": \"\",\n    \"title\": \"Brandenburger Tor bei Nacht, Deutschland, Berlin Brandenburg Gate at night, Germany, Berlin BLWS6537\",\n    \"usagelicences\": [\n        {\n            \"credits\": 2,\n            \"currency\": \"EURO\",\n            \"languagePointer\": \"licence1\",\n            \"name\": \"Web\",\n            \"price\": 1900,\n            \"licenseid\": 1\n        },\n        {\n            \"credits\": 20,\n            \"currency\": \"EURO\",\n            \"languagePointer\": \"licence2\",\n            \"name\": \"All Media\",\n            \"price\": 9900,\n            \"licenseid\": 2\n        }\n    ],\n    \"width\": 5315,\n    \"mediaReference\": {\n        \"id\": 137849760,\n        \"source\": \"st\",\n        \"type\": \"image\"\n    },\n    \"searchindexing\": true\n}"
+				},
+				{
+					"name": "media 150105569",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urll}}/media/150105569",
+							"host": [
+								"{{urll}}"
+							],
+							"path": [
+								"media",
+								"150105569"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"caption\": \"Eine Person mit Koffer zeichnet sich ab vor einem stehenden ICE der Deutschen Bahn im Hauptbahnhof Berlin, 07.02.2022. Berlin Deutschland *** A person with suitcase draws off in front of a standing Deutsche Bahn ICE train in Berlin main station, 07 02 2022 Berlin Germany Copyright: xFlorianxGaertner photothek.dex\",\n    \"categories\": [\n        {\n            \"link\": \"https://www.imago-images.com/category/editorial/news/business\",\n            \"name\": \"Business\"\n        }\n    ],\n    \"cliplength\": 0,\n    \"creationdate\": \"2022-02-07 00:00:00.000\",\n    \"creator\": \"photothek\",\n    \"height\": 2667,\n    \"keywords\": \"\",\n    \"licencelanguagepointer\": \"licencegroup1\",\n    \"licensetype\": \"RM\",\n    \"masterimage\": null,\n    \"mediaid\": 150105569,\n    \"mediaidpadded\": \"0150105569\",\n    \"mediaprev\": null,\n    \"mediasrc\": \"https://www.imago-images.com/bild/st/0150105569/m.jpg\",\n    \"mediathumb\": \"https://www.imago-images.com/bild/st/0150105569/s.jpg\",\n    \"mediatype\": \"image\",\n    \"similarmedia\": null,\n    \"source\": \"st\",\n    \"territoryrestrictions\": \"\",\n    \"title\": \"Eine Person mit Koffer zeichnet sich ab vor einem stehenden ICE der Deutschen Bahn im Hauptbahnhof B\",\n    \"usagelicences\": [\n        {\n            \"credits\": 2,\n            \"currency\": \"EURO\",\n            \"languagePointer\": \"licence1\",\n            \"name\": \"Web\",\n            \"price\": 1900,\n            \"licenseid\": 1\n        },\n        {\n            \"credits\": 20,\n            \"currency\": \"EURO\",\n            \"languagePointer\": \"licence2\",\n            \"name\": \"All Media\",\n            \"price\": 9900,\n            \"licenseid\": 2\n        }\n    ],\n    \"width\": 4000,\n    \"mediaReference\": {\n        \"id\": 150105569,\n        \"source\": \"st\",\n        \"type\": \"image\"\n    },\n    \"searchindexing\": true\n}"
+				},
+				{
+					"name": "media 135909679",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urll}}/media/135909679",
+							"host": [
+								"{{urll}}"
+							],
+							"path": [
+								"media",
+								"135909679"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"caption\": \"Demonstranten protestieren anlaesslich des Globalen Klimastreiks fuer mehr Klimagerechtigkeit in Berlin, 24.09.2021. Berlin Deutschland *** Demonstrators protest on the occasion of the Global Climate Strike for more climate justice in Berlin, 24 09 2021 Berlin Germany Copyright: xFlorianxGaertner photothek.dex\",\n    \"categories\": [\n        {\n            \"link\": \"https://www.imago-images.com/category/editorial/news/politics\",\n            \"name\": \"Politics\"\n        }\n    ],\n    \"cliplength\": 0,\n    \"creationdate\": \"2021-09-24 00:00:00.000\",\n    \"creator\": \"photothek\",\n    \"height\": 3648,\n    \"keywords\": \"\",\n    \"licencelanguagepointer\": \"licencegroup1\",\n    \"licensetype\": \"RM\",\n    \"masterimage\": null,\n    \"mediaid\": 135909679,\n    \"mediaidpadded\": \"0135909679\",\n    \"mediaprev\": null,\n    \"mediasrc\": \"https://www.imago-images.com/bild/st/0135909679/m.jpg\",\n    \"mediathumb\": \"https://www.imago-images.com/bild/st/0135909679/s.jpg\",\n    \"mediatype\": \"image\",\n    \"similarmedia\": null,\n    \"source\": \"st\",\n    \"territoryrestrictions\": \"\",\n    \"title\": \"Demonstranten protestieren anlaesslich des Globalen Klimastreiks fuer mehr Klimagerechtigkeit in Ber\",\n    \"usagelicences\": [\n        {\n            \"credits\": 2,\n            \"currency\": \"EURO\",\n            \"languagePointer\": \"licence1\",\n            \"name\": \"Web\",\n            \"price\": 1900,\n            \"licenseid\": 1\n        },\n        {\n            \"credits\": 20,\n            \"currency\": \"EURO\",\n            \"languagePointer\": \"licence2\",\n            \"name\": \"All Media\",\n            \"price\": 9900,\n            \"licenseid\": 2\n        }\n    ],\n    \"width\": 5472,\n    \"mediaReference\": {\n        \"id\": 135909679,\n        \"source\": \"st\",\n        \"type\": \"image\"\n    },\n    \"searchindexing\": true\n}"
+				},
+				{
+					"name": "media 115278567",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urll}}/media/115278567",
+							"host": [
+								"{{urll}}"
+							],
+							"path": [
+								"media",
+								"115278567"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"caption\": \"IMAGO Creative: Menschen in Berlin Woman in public transport, using smartphone, Berlin, Germany. xagefotostockx xBenjaminxEgerlandx Model Released VP7-3172138\",\n    \"categories\": [],\n    \"cliplength\": 0,\n    \"creationdate\": \"2021-02-22 00:00:00.000\",\n    \"creator\": \"agefotostock\",\n    \"height\": 1278,\n    \"keywords\": \"\",\n    \"licencelanguagepointer\": \"licencegroup1\",\n    \"licensetype\": \"RM\",\n    \"masterimage\": null,\n    \"mediaid\": 115278567,\n    \"mediaidpadded\": \"0115278567\",\n    \"mediaprev\": null,\n    \"mediasrc\": \"https://www.imago-images.com/bild/st/0115278567/m.jpg\",\n    \"mediathumb\": \"https://www.imago-images.com/bild/st/0115278567/s.jpg\",\n    \"mediatype\": \"image\",\n    \"similarmedia\": null,\n    \"source\": \"st\",\n    \"territoryrestrictions\": \"\",\n    \"title\": \"IMAGO Creative: Menschen in Berlin Woman in public transport, using smartphone, Berlin, Germany. xag\",\n    \"usagelicences\": [\n        {\n            \"credits\": 2,\n            \"currency\": \"EURO\",\n            \"languagePointer\": \"licence1\",\n            \"name\": \"Web\",\n            \"price\": 1900,\n            \"licenseid\": 1\n        },\n        {\n            \"credits\": 20,\n            \"currency\": \"EURO\",\n            \"languagePointer\": \"licence2\",\n            \"name\": \"All Media\",\n            \"price\": 9900,\n            \"licenseid\": 2\n        }\n    ],\n    \"width\": 853,\n    \"mediaReference\": {\n        \"id\": 115278567,\n        \"source\": \"st\",\n        \"type\": \"image\"\n    },\n    \"searchindexing\": true\n}"
+				}
+			]
+		}
+	]
+}

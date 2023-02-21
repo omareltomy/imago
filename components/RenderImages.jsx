@@ -17,7 +17,7 @@ const RenderImages = () => {
   }, []);
 
   return (
-    <div className="grid grid-cols-4 gap-4">
+    <div className="grid grid-cols-4 gap-4 px-[1rem] py-[2rem]">
       {images.map((image) => (
         <div key={image.id}>
           <Image

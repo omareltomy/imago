@@ -21,7 +21,7 @@ const Item = () => {
       <div className="w-full h-screen flex ">
         <div className="w-[70vw] flex flex-col bg-[#FAF9F8]">
           <div className="flex flex-col">
-            <h1 className="text-2xl text-[#141414] font-bold mx-[3rem] mb-[0.5rem] mt-[1rem]">
+            <h1 className="text-2xl text-[#141414] font-bold mx-[3rem]  mt-[1rem]">
               Juventus Torino celebrates the championship Db Torino{" "}
             </h1>
             <p className="mx-[3rem]">
@@ -31,12 +31,12 @@ const Item = () => {
               facilisis leo, vel fringilla... Show More
             </p>
           </div>
-          <div className=" w-[70%] h-[60%] mx-[3rem] my-[1rem] relative">
+          <div className="  mx-[3rem] my-[10px] relative">
             <Image
               src={imageUrl}
-              fill
+              width={600}
+              height={300}
               alt="Fetched Image"
-              style={{ objectFit: "cover" }}
             />
           </div>
         </div>

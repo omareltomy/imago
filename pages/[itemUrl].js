@@ -1,17 +1,27 @@
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
+import { useRouter } from "next/router";
 
 const Item = () => {
+  const [id, setId] = useState(null);
+  useEffect(() => {
+    const path = window.location.pathname;
+    const IdString = path.split("/").pop();
+    const parsedId = parseInt(IdString, 10);
+    setId(parsedId);
+  }, []);
   const rowStyles =
     "flex justify-between items-center px-[1rem] py-[1.5rem] text-2xl border-b border-[#A3A3A6]";
+  const imageUrl = `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&h=650&w=940&fit=crop&h=1000&w=1200"`;
+
   return (
     <>
       <Navbar />
       <div className="w-full h-screen flex ">
         <div className="w-[70vw] flex flex-col bg-[#FAF9F8]">
           <div className="flex flex-col">
-            <h1 className="text-2xl text-[#141414] font-bold mx-[3rem] mb-[0.5rem] mt-[3rem]">
+            <h1 className="text-2xl text-[#141414] font-bold mx-[3rem] mb-[0.5rem] mt-[1rem]">
               Juventus Torino celebrates the championship Db Torino{" "}
             </h1>
             <p className="mx-[3rem]">
@@ -21,11 +31,11 @@ const Item = () => {
               facilisis leo, vel fringilla... Show More
             </p>
           </div>
-          <div className=" w-[70%] h-[50%] m-[3rem] relative">
+          <div className=" w-[80%] h-[80%] mx-[3rem] my-[1rem] relative">
             <Image
-              src="/images/sport.png"
+              src={imageUrl}
               fill
-              alt="sports picture"
+              alt="Fetched Image"
               style={{ objectFit: "cover" }}
             />
           </div>

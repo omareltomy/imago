@@ -6,7 +6,8 @@ const RenderImages = () => {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
-    fetch("https://api.pexels.com/v1/curated?per_page=16", {
+    const randomPage = Math.floor(Math.random() * 50) + 1; // get a random page number between 1 and 50
+    fetch(`https://api.pexels.com/v1/curated?per_page=16&page=${randomPage}`, {
       headers: {
         Authorization:
           "563492ad6f91700001000001edf5a1db16514444a88141411e5fcaba",

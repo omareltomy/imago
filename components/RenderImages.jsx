@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const RenderImages = () => {
   const [images, setImages] = useState([]);
@@ -19,14 +20,14 @@ const RenderImages = () => {
   return (
     <div className="grid grid-cols-4 gap-4 px-[1rem] py-[2rem]">
       {images.map((image) => (
-        <div key={image.id}>
+        <Link href={`${image.id}`} key={image.id} passHref>
           <Image
             src={image.src.large}
             alt={image.photographer}
             width={image.width}
             height={image.height}
           />
-        </div>
+        </Link>
       ))}
     </div>
   );

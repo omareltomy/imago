@@ -17,7 +17,7 @@ const RenderImages = () => {
       .then((data) => setImages(data.photos))
       .catch((error) => console.log(error));
   }, []);
-
+  console.log(images);
   return (
     <div className="grid grid-cols-4 gap-4 px-[1rem] py-[2rem]">
       {images.map((image) => (

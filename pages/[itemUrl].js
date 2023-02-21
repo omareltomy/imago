@@ -31,7 +31,7 @@ const Item = () => {
               facilisis leo, vel fringilla... Show More
             </p>
           </div>
-          <div className=" w-[80%] h-[80%] mx-[3rem] my-[1rem] relative">
+          <div className=" w-[70%] h-[60%] mx-[3rem] my-[1rem] relative">
             <Image
               src={imageUrl}
               fill
@@ -58,9 +58,7 @@ const Item = () => {
               <button className="w-[45%] border border-1 border-black py-[5px]">
                 Add to basket
               </button>
-              <button className="w-[45%] bg-[#00F5F5] py-[5px]">
-                Add to basket
-              </button>
+              <button className="w-[45%] bg-[#00F5F5] py-[5px]">Buy now</button>
             </div>
           </div>
         </div>

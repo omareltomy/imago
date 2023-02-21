@@ -13,7 +13,7 @@ const Item = () => {
   }, []);
   const rowStyles =
     "flex justify-between items-center px-[1rem] py-[1.5rem] text-2xl border-b border-[#A3A3A6]";
-  const imageUrl = `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&h=650&w=940`;
+  const imageUrl = `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200`;
 
   return (
     <>
@@ -21,7 +21,7 @@ const Item = () => {
       <div className="w-full h-screen flex ">
         <div className="w-[70vw] flex flex-col bg-[#FAF9F8]">
           <div className="flex flex-col">
-            <h1 className="text-2xl text-[#141414] font-bold mx-[3rem]  mt-[1rem]">
+            <h1 className="text-2xl text-[#141414] font-bold mx-[3rem] mb-[0.5rem] mt-[1rem]">
               Juventus Torino celebrates the championship Db Torino{" "}
             </h1>
             <p className="mx-[3rem]">
@@ -31,12 +31,12 @@ const Item = () => {
               facilisis leo, vel fringilla... Show More
             </p>
           </div>
-          <div className=" w-[80%] h-[70%] mx-[3rem] my-[10px] relative">
+          <div className=" w-[65%] h-[60%] mx-[3rem] my-[1rem] relative">
             <Image
               src={imageUrl}
               fill
               alt="Fetched Image"
-              style={{ objectFit: "contain" }}
+              className="object-cover"
             />
           </div>
         </div>

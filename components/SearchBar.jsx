@@ -6,11 +6,11 @@ const SearchBar = ({ onSearchSubmit }) => {
 
   const handleSearchSubmit = (event) => {
     event.preventDefault();
-    onSearchSubmit(searchQuery);
   };
 
   const fetchResults = (event) => {
     if (event.key === "Enter") {
+      onSearchSubmit(searchQuery);
       handleSearchSubmit(event);
     }
   };
@@ -20,7 +20,7 @@ const SearchBar = ({ onSearchSubmit }) => {
   };
   return (
     <div className="w-[100vw] h-[30vh] bg-[#F4F3F0] flex items-center justify-center">
-      <form onSubmit={handleSearchSubmit}>
+      <form>
         <div className="relative">
           <input
             type="text"

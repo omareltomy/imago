@@ -5,22 +5,28 @@ import { useRouter } from "next/router";
 
 const Item = () => {
   const [id, setId] = useState(null);
-
+  const [image, setImage] = useState("");
   // Fetch the id from the url and set it to state
 
   useEffect(() => {
     const path = window.location.pathname;
     const IdString = path.split("/").pop();
-    const parsedId = parseInt(IdString, 10);
-    setId(parsedId);
-  }, []);
+
+    setId(IdString);
+    fetch(
+      `https://api.unsplash.com/photos/${id}?client_id=${process.env.NEXT_PUBLIC_UNSPLASH_API_KEY}`
+    )
+      .then((response) => response.json())
+      .then((data) => setImage(data.urls.regular))
+      .catch((error) => console.log(error));
+  }, [id]);
 
   const rowStyles =
     "flex justify-between items-center px-[1rem] py-[1.5rem] text-2xl border-b border-[#A3A3A6]";
 
   // dynamically fetch the image from pexels using this url
-  const imageUrl = `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200`;
 
+  // console.log(image);
   return (
     <>
       <Navbar />
@@ -39,7 +45,7 @@ const Item = () => {
           </div>
           <div className=" w-[65%] h-[60%] mx-[3rem] my-[1rem] relative">
             <Image
-              src={imageUrl}
+              src={image}
               fill
               alt="Fetched Image"
               className="object-cover"

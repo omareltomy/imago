@@ -7,7 +7,12 @@ const nextConfig = {
 module.exports = nextConfig;
 module.exports = {
   images: {
-    domains: ["images.pexels.com", "api.pexels.com", "images.unsplash.com"],
+    domains: [
+      "images.pexels.com",
+      "api.pexels.com",
+      "images.unsplash.com",
+      "api.unsplash.com",
+    ],
   },
   env: {
     NEXT_PUBLIC_PEXELS_API_KEY: process.env.NEXT_PUBLIC_PEXELS_API_KEY,

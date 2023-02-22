@@ -5,14 +5,20 @@ import { useRouter } from "next/router";
 
 const Item = () => {
   const [id, setId] = useState(null);
+
+  // Fetch the id from the url and set it to state
+
   useEffect(() => {
     const path = window.location.pathname;
     const IdString = path.split("/").pop();
     const parsedId = parseInt(IdString, 10);
     setId(parsedId);
   }, []);
+
   const rowStyles =
     "flex justify-between items-center px-[1rem] py-[1.5rem] text-2xl border-b border-[#A3A3A6]";
+
+  // dynamically fetch the image from pexels using this url
   const imageUrl = `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200`;
 
   return (

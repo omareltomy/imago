@@ -43,19 +43,26 @@ const RenderImages = () => {
 
       {/* Render the list of images in a responsive grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4 py-8">
-        {images?.map((image) => (
-          <Link href={`/${image.id}`} key={image.id} passHref legacyBehavior>
-            <a className="block">
-              <Image
-                src={image.urls.regular}
-                alt={image.alt_description}
-                width={320}
-                height={image.height * (320 / image.width)}
-                className="w-full h-full object-cover"
-              />
-            </a>
-          </Link>
-        ))}
+        {images.length > 0
+          ? images.map((image) => (
+              <Link
+                href={`/${image.id}`}
+                key={image.id}
+                passHref
+                legacyBehavior
+              >
+                <a className="block">
+                  <Image
+                    src={image.urls.regular}
+                    alt={image.alt_description}
+                    width={320}
+                    height={image.height * (320 / image.width)}
+                    className="w-full h-full object-cover"
+                  />
+                </a>
+              </Link>
+            ))
+          : null}
       </div>
     </>
   );

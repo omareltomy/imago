@@ -66,12 +66,12 @@ const Item = () => {
             </div>
             <div className={rowStyles}></div>
             <div className={rowStyles}></div>
-            <div className="w-full flex justify-around mt-[3rem] ">
-              <button className="w-[45%] border border-1 border-black py-[5px]">
-                Add to basket
-              </button>
-              <button className="w-[45%] bg-[#00F5F5] py-[5px]">Buy now</button>
-            </div>
+          </div>
+          <div className="w-full flex justify-between px-[5%] ">
+            <button className="w-[45%] border border-1 border-black py-[5px]">
+              Add to basket
+            </button>
+            <button className="w-[45%] bg-[#00F5F5] py-[5px]">Buy now</button>
           </div>
         </div>
       </div>

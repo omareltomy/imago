@@ -12,9 +12,9 @@ const RenderImages = () => {
   // Use the `useEffect` hook to fetch a random set of curated images when the component mounts
   useEffect(() => {
     // Choose a random page number between 1 and 50
-    const randomPage = Math.floor(Math.random() * 10) + 1;
+    const randomPage = Math.floor(Math.random() * 50) + 1;
 
-    // Fetch the list of curated images from the Pexels API
+    // Fetch the list of curated images from the Unsplash API
     fetch(
       `https://api.unsplash.com/photos/?per_page=9&page=${randomPage}&client_id=${process.env.NEXT_PUBLIC_UNSPLASH_API_KEY}`
     )

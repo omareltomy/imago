@@ -4,7 +4,7 @@ import Image from "next/image";
 const Navbar = () => {
   const linkStyles = "text-[#333]  text-[1.2rem] mr-[2rem]";
   return (
-    <div className="h-[3rem] w-[100vw] bg-white flex justify-between items-center py-[3rem] px-[3rem]">
+    <div className="h-[3rem] w-[100vw] bg-white flex justify-between items-center p-[3rem]">
       <Link href="/">
         <Image src="/icons/logo.svg" alt="logo" width={100} height={50} />
       </Link>

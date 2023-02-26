@@ -43,7 +43,7 @@ const Item = () => {
   }
 
   const rowStyles =
-    "flex justify-between items-center px-[1rem] py-[1.5rem]  border-b border-[#A3A3A6]";
+    "flex justify-between items-center px-[1rem] py-[1.5rem]  flex-grow flex-shrink ";
 
   return (
     <>
@@ -73,7 +73,7 @@ const Item = () => {
             <>
               <h1 className="text-2xl mt-[2rem]  ">Choose your License</h1>
 
-              <div className="w-[90%] h-[300px] mt-[2rem] bg-[#EAE7E2] border border-1 border-[#A3A3A6]">
+              <div className="w-[90%] h-[300px] mt-[2rem] bg-[#EAE7E2] border border-1 border-[#A3A3A6] flex flex-col ">
                 <div className={rowStyles}>
                   <h1 className="text-2xl">Premium RF</h1>
                   <h1 className="text-2xl">
@@ -84,7 +84,7 @@ const Item = () => {
                   </h1>
                 </div>
                 <div
-                  className={rowStyles + "border border-b-1 border-[#A3A3A6]"}
+                  className={rowStyles + "border-t border-1 border-[#A3A3A6]"}
                 >
                   {/* <div className="flex w-max"> */}
                   <div className="inline-flex items-center">
@@ -94,12 +94,14 @@ const Item = () => {
                     </h1>
                   </div>
 
-                  <h1>
+                  <h1 className="text-[1.1rem]">
                     {String(data.usagelicences[0].price).substring(0, 2) +
                       " USD"}
                   </h1>
                 </div>
-                <div className={rowStyles + "text-[10px]"}>
+                <div
+                  className={rowStyles + "border-t border-1 border-[#A3A3A6]"}
+                >
                   <div className="inline-flex items-center">
                     <Checkbox checked={isChecked2} onChange={toggleCheckbox2} />
 
@@ -107,7 +109,7 @@ const Item = () => {
                       {data.usagelicences[0].name}
                     </h1>
                   </div>
-                  <h1>
+                  <h1 className="text-[1.1rem]">
                     {String(data.usagelicences[1].price).substring(0, 2) +
                       " USD"}
                   </h1>

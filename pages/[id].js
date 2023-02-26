@@ -106,7 +106,7 @@ const Item = () => {
                     <Checkbox checked={isChecked2} onChange={toggleCheckbox2} />
 
                     <h1 className="text-lg mx-2">
-                      {data.usagelicences[0].name}
+                      {data.usagelicences[1].name}
                     </h1>
                   </div>
                   <h1 className="text-[1.1rem]">
